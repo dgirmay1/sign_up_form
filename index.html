@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Sign Up Form</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="side">
+      <div class="overlay"></div>
+      <div class="header">ODIN PROJECT</div>
+      <div class="credit">
+        <span
+          >Image by
+          <a
+            href="https://images.unsplash.com/photo-1713795324015-4e290fd30c37?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=rick-rothenberg-L2j38MiO6a4-unsplash.jpg"
+          >
+            Rick Rothenberg
+          </a>
+          on <a href="https://unsplash.com/">Unsplash</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="signup_form">
+      <div class="quote">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+          <br /><br />
+          Sign up now to get started.
+          <br /><br />
+          You know you want to.
+        </p>
+      </div>
+      <form action="post">
+        <h2>Ready to Sign Up!!!</h2>
+        <div class="row">
+          <fieldset>
+            <label for="firstname">first name</label>
+            <input type="text" id="firstname" name="firstname" required />
+          </fieldset>
+          <fieldset>
+            <label for="lastname">last name</label>
+            <input type="text" id="lastname" name="lastname" required />
+          </fieldset>
+        </div>
+        <div class="row">
+          <fieldset>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" />
+          </fieldset>
+          <fieldset>
+            <label for="phonenumber">phone number</label>
+            <input type="number" id="phonenumber" name="phonenumber" />
+          </fieldset>
+        </div>
+        <div class="row">
+          <fieldset>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" />
+          </fieldset>
+          <fieldset>
+            <label for="password">confirm password</label>
+            <input type="password" id="confirmpassword" name="password" />
+          </fieldset>
+        </div>
+      </form>
+      <div class="login"></div>
+    </div>
+  </body>
 </html>
