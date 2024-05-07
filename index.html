@@ -35,7 +35,7 @@
         </p>
       </div>
       <form action="post">
-        <h2>Ready to Sign Up!!!</h2>
+        <h3>Ready to Sign Up!!!</h3>
         <div class="row">
           <fieldset>
             <label for="firstname">first name</label>
@@ -49,25 +49,43 @@
         <div class="row">
           <fieldset>
             <label for="email">email</label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" name="email" required />
           </fieldset>
           <fieldset>
             <label for="phonenumber">phone number</label>
-            <input type="number" id="phonenumber" name="phonenumber" />
+            <input type="number" id="phonenumber" name="phonenumber" required />
           </fieldset>
         </div>
         <div class="row">
           <fieldset>
             <label for="password">password</label>
-            <input type="password" id="password" name="password" />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="5"
+              maxlength="20"
+              required
+            />
           </fieldset>
           <fieldset>
             <label for="password">confirm password</label>
-            <input type="password" id="confirmpassword" name="password" />
+            <input
+              type="password"
+              id="confirmpassword"
+              name="password"
+              minlength="5"
+              maxlength="20"
+              required
+            />
           </fieldset>
         </div>
+        <button>Submit</button>
       </form>
-      <div class="login"></div>
+      <div class="login">
+        Already have an account?
+        <a class="bold" href="//">Log In</a>
+      </div>
     </div>
   </body>
 </html>
